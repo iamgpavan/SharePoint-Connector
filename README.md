@@ -25,7 +25,7 @@ Manage SharePoint files and folders with ease. Simplify file uploads, deletions,
 - [Conclusion](#conclusion)
 - [Contributing](#contributing)
 - [License](#license)
-- [About the Author](#abouth-the-author)
+- [About the Author](#about-the-author)
 
 ## Getting Started
 
