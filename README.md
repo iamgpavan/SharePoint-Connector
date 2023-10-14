@@ -1,6 +1,6 @@
 # SharePoint Manager
 
-![GitHub](https://github.com/g-pavan/SharePoint-Connector)
+![GitHub](https://img.shields.io/github/license/g-pavan/SharePoint-Connector) ![GitHub stars](https://img.shields.io/github/stars/g-pavan/SharePoint-Connector) ![GitHub forks](https://img.shields.io/github/forks/g-pavan/SharePoint-Connector) ![GitHub issues](https://img.shields.io/github/issues/g-pavan/SharePoint-Connector)
 
 Manage SharePoint files and folders with ease. Simplify file uploads, deletions, and more using this Python script.
 
