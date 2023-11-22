@@ -1,6 +1,9 @@
 # SharePoint site URL
 site_url = 'YOUR_SHAREPOINT_SITE_URL'
 
+# Relative site URL
+relative_url = 'YOUR_RELATIVE_URL' 
+
 # SharePoint document library name
 library_name = 'YOUR_LIBRARY_NAME' # Example 'Shared Documents'
 
