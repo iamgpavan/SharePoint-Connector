@@ -33,8 +33,9 @@ class SharePointFileManager(SharePointConnection):
     file_manager.set_folder_ctx("Shared Documents", "Subfolder")
     files = file_manager.get_files()
     """
-    def __init__(self, site_url, username=None, password=None, client_id=None, client_secret=None):
+    def __init__(self, site_url, relative_url, username=None, password=None, client_id=None, client_secret=None):
         self.connection = SharePointConnection(site_url, username, password, client_id, client_secret)
+        self.relative_url = relative_url
         self.existing_files = set()
         self.library_name = None
         self.folder_name = None
@@ -58,7 +59,7 @@ class SharePointFileManager(SharePointConnection):
         try:
             self.library_name = library_name
             self.folder_name = folder_name
-            self.folder = self.ctx.web.get_folder_by_server_relative_url(f'/sites/adf_test/{library_name}/{folder_name}')
+            self.folder = self.ctx.web.get_folder_by_server_relative_url(f'{self.relative_url}/{library_name}/{folder_name}')
         except Exception as e:
             print(f"Error setting folder context: {str(e)}")
              
